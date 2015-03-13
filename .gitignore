@@ -4,6 +4,7 @@
 *.ipa
 
 # Generated files
+dist/
 build/
 DerivedData/
 
