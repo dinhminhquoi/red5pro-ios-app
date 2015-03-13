@@ -22,8 +22,10 @@ $ xcode-select --install
 ### Generate IPA
 Replace `YOUR-PROFILE-NAME-HERE` in the following command with the name of your Development Provisioning Profile:
 ```
-$ PROFILE_NAME=YOUR-PROFILE-NAME-HERE ./dist.sh
+$ PROFILE_NAME="YOUR-PROFILE-NAME-HERE" ./dist.sh
 ```
+
+As an example, if you had a provision file with the name *Awesome Developer Development*, then the command entry would look like: `PROFILE_NAME="Awesome Developer Development" ./dist.sh`.
 
 If all goes well, you will be prompted to allow codesign to use your key:
 
