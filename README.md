@@ -19,7 +19,8 @@ $ xcode-select --install
 3. Download developer certificate and place in our `Keychain`
 4. While in your [developer.apple.com](http://developer.apple.com) account page, take note of the name associated with your `Development` Provisioning Profile
 
-Release `YOUR-PROFILE-NAME-HERE` in the following command with the name of your Development Provisioning Profile:
+### Generate IPA
+Replace `YOUR-PROFILE-NAME-HERE` in the following command with the name of your Development Provisioning Profile:
 ```
 $ PROFILE_NAME=YOUR-PROFILE-NAME-HERE ./dist.sh
 ```
