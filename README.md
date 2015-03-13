@@ -29,4 +29,13 @@ If all goes well, you will be prompted to allow codesign to use your key:
 
 ![codesign asks for access to keychain](http://infrared5.github.io/red5pro-ios-app/images/ios-setup-1.png)
 
-Select `Allow` or `Allow Always` and the build tool should finish up shortly with the IPA available at: *dist/Red5Pro.ipa*
+Select `Allow` or `Allow Always` and the build tool should finish up shortly with the IPA available at: **dist/Red5Pro.ipa**.
+
+### Launch on Device
+1. Open iTunes
+2. Plug in an iPhone or iPad and wait for sync to finish
+3. Drag the generated **Red5Pro.ipa** from the previous step into iTunes
+4. Navigate to the `Apps` section within iTunes and locate **Red5Pro**
+5. Click `Install`
+6. Click `Apply` or `Sync`
+
