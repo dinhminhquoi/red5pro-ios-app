@@ -436,7 +436,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 92E1DC5B19A78C0000F6131D /* Build configuration list for PBXProject "Red5ProiOS" */;
+			buildConfigurationList = 92E1DC5B19A78C0000F6131D /* Build configuration list for PBXProject "Red5Pro" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -744,7 +744,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		92E1DC5B19A78C0000F6131D /* Build configuration list for PBXProject "Red5ProiOS" */ = {
+		92E1DC5B19A78C0000F6131D /* Build configuration list for PBXProject "Red5Pro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92E1DC8A19A78C0000F6131D /* Debug */,
