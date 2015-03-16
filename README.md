@@ -58,7 +58,7 @@ $ xcode-select --install
 
 Building with XCode
 ---
-#### Note: The current version does not support running in the iOS Simulator and requires a device to be connected.
+##### Note: The current version does not support running in the iOS Simulator and requires a device to be connected.
 
 1. Plug in a device (iPhone or iPad)
 2. Navigate to the directory in which you cloned this repository.
