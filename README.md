@@ -69,12 +69,15 @@ Building with XCode
 **Happy streaming and second screening!**
 
 _step #2: Double-click on Red5Pro.xcodeproj_
+
 ![codesign asks for access to keychain](http://infrared5.github.io/red5pro-ios-app/images/xcode-setup-1.png)
 
 _step #3: XCode will open_
+
 ![codesign asks for access to keychain](http://infrared5.github.io/red5pro-ios-app/images/xcode-setup-2.png)
 
 _step #6: You may be prompted to allow for code signing_
+
 ![codesign asks for access to keychain](http://infrared5.github.io/red5pro-ios-app/images/xcode-setup-3.png)
 
 Building With Command Line
