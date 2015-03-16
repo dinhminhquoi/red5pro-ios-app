@@ -58,12 +58,13 @@ $ xcode-select --install
 
 Building with XCode
 ---
+#### Note: The current version does not support running in the iOS Simulator and requires a device to be connected.
 
-1. Navigate to the directory in which you cloned this repository.
-2. Double-click on the Red5Pro.xcodeproj file.
-3. XCode will open and generate the additional project files for your workspace.
-4. Plug in a device (iPhone or iPad)
-5. Select to `Run` on device
+1. Plug in a device (iPhone or iPad)
+2. Navigate to the directory in which you cloned this repository.
+3. Double-click on the Red5Pro.xcodeproj file.
+4. XCode will open and generate the additional project files for your workspace.
+5. Select to `Run` on device. _Be sure to select the connected device as target_
 6. You may be prompted to allow for code signing.
 7. Select `Allow` or `Always Allow`
 8. The Red5 Pro iOS Application will be built and pushed to your device
