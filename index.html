@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Red5pro-ios-app by infrared5</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Red5pro-ios-app</h1>
+        <p class="header">iOS-based Red5Pro Application with Streaming and Second Screen integration</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/infrared5/red5pro-ios-app/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/infrared5/red5pro-ios-app/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/infrared5/red5pro-ios-app">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/infrared5">infrared5</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a id="red5-pro-ios-application" class="anchor" href="#red5-pro-ios-application" aria-hidden="true"><span class="octicon octicon-link"></span></a>Red5 Pro iOS Application</h1>
+
+<blockquote>
+<p>This Xcode project shows how to integrate the <a href="http://red5pro.com">Red5 Pro</a> SDKs to enable live streaming and second screen experiences on a mobile device</p>
+</blockquote>
+
+<h2>
+<a id="quickstart" class="anchor" href="#quickstart" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quickstart</h2>
+
+<p><a href="#building-with-xcode">&gt; Using XCode</a></p>
+
+<p><a href="#building-with-command-line">&gt; Using Command Line</a></p>
+
+<pre><code>$ git clone https://github.com/infrared5/red5pro-ios-app.git
+$ cd red5pro-ios-app
+$ xcode-select --install
+$ PROFILE_NAME="YOUR-PROFILE-NAME-HERE" ./dist.sh
+</code></pre>
+
+<p><em>Replace <code>YOUR-PROFILE-NAME-HERE</code> in the following command with the name of your Development Provisioning Profile</em></p>
+
+<p>The IPA will be generated and available at: <strong>dist/Red5Pro.ipa</strong>.</p>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<ul>
+<li><a href="http://red5pro.com">Red5 Pro Server</a></li>
+<li><a href="https://itunes.apple.com/us/app/xcode/id497799835">XCode and XCode Command line tools</a></li>
+<li><a href="http://developer.apple.com">Apple Developer Account</a></li>
+</ul>
+
+<p>The Red5 Pro SDKs have a minimum support for <strong>iOS 6</strong>.</p>
+
+<p><em>It is assumed you have some familiarity with generating certificates and provision files from your Apple Developer Account. Please consult the <a href="https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ProvisioningDevelopment.html">online document</a> for more information.</em></p>
+
+<h3>
+<a id="red5-pro-server" class="anchor" href="#red5-pro-server" aria-hidden="true"><span class="octicon octicon-link"></span></a>Red5 Pro Server</h3>
+
+<p>The <strong>Red5 Pro Server</strong> is build on the Open Source <a href="https://github.com/Red5/red5-server">Red5 Server</a> and allows to build scalable live streaming and second screen applications.</p>
+
+<p>The example application provided in this project repository integrates the Red5 Pro Native SDKs  and libraries that enable live streaming and second screen experiences. You will need to setup a Red5 Pro server - either on your local machine or remotely - in order to stream video and communicate with a second screen host.</p>
+
+<p>More information about Red5 Pro, its SDKs and setup can be found in the online <a href="http://red5pro.com/docs/">Red5 Pro Documentation</a>.</p>
+
+<p><strong>To register an account and start using Red5 Pro in production, visit the <a href="https://account.red5pro.com/register">Red5 Pro Accounts</a>!</strong></p>
+
+<h3>
+<a id="if-xcode-not-installed" class="anchor" href="#if-xcode-not-installed" aria-hidden="true"><span class="octicon octicon-link"></span></a>If XCode not installed</h3>
+
+<ol>
+<li>Download the <a href="https://itunes.apple.com/us/app/xcode/id497799835">XCode</a>
+</li>
+<li>If not installed along with XCode, install XCode Command line tools:</li>
+</ol>
+
+<pre><code>$ xcode-select --install
+</code></pre>
+
+<h3>
+<a id="if-apple-developer-account-not-created" class="anchor" href="#if-apple-developer-account-not-created" aria-hidden="true"><span class="octicon octicon-link"></span></a>If Apple Developer Account not created</h3>
+
+<ol>
+<li>Create a developer account at <a href="http://developer.apple.com">developer.apple.com</a>
+</li>
+<li>Setup certificate and provisioning files. <a href="https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html">more info</a>
+</li>
+<li>Download developer certificate and place in our <code>Keychain</code>
+</li>
+<li>While in your <a href="http://developer.apple.com">developer.apple.com</a> account page, take note of the name associated with your <code>Development</code> Provisioning Profile</li>
+</ol>
+
+<h2>
+<a id="building-with-xcode" class="anchor" href="#building-with-xcode" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building with XCode</h2>
+
+<ol>
+<li>Navigate to the directory in which you cloned this repository.</li>
+<li>Double-click on the Red5Pro.xcodeproj file.</li>
+<li>XCode will open and generate the additional project files for your workspace.</li>
+<li>Plug in a device (iPhone or iPad)</li>
+<li>Select to <code>Run</code> on device</li>
+<li>You may be prompted to allow for code signing.</li>
+<li>Select <code>Allow</code> or <code>Always Allow</code>
+</li>
+<li>The Red5 Pro iOS Application will be built and pushed to your device</li>
+</ol>
+
+<p><strong>Happy streaming and second screening!</strong></p>
+
+<p><em>step #2: Double-click on Red5Pro.xcodeproj</em>
+<img src="http://infrared5.github.io/red5pro-ios-app/images/xcode-setup-1.png" alt="codesign asks for access to keychain"></p>
+
+<p><em>step #3: XCode will open</em>
+<img src="http://infrared5.github.io/red5pro-ios-app/images/xcode-setup-2.png" alt="codesign asks for access to keychain"></p>
+
+<p><em>step #6: You may be prompted to allow for code signing</em>
+<img src="http://infrared5.github.io/red5pro-ios-app/images/xcode-setup-3.png" alt="codesign asks for access to keychain"></p>
+
+<h2>
+<a id="building-with-command-line" class="anchor" href="#building-with-command-line" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building With Command Line</h2>
+
+<h3>
+<a id="generate-ipa" class="anchor" href="#generate-ipa" aria-hidden="true"><span class="octicon octicon-link"></span></a>Generate IPA</h3>
+
+<p>Replace <code>YOUR-PROFILE-NAME-HERE</code> in the following command with the name of your Development Provisioning Profile:</p>
+
+<pre><code>$ PROFILE_NAME="YOUR-PROFILE-NAME-HERE" ./dist.sh
+</code></pre>
+
+<p>As an example, if you had a provision file with the name <em>Awesome Developer Development</em>, then the command entry would look like: <code>PROFILE_NAME="Awesome Developer Development" ./dist.sh</code>.</p>
+
+<p><em>You can find the name associated with your provision file on your <a href="http://developer.apple.com">developer.apple.com</a> account.</em></p>
+
+<p>If all goes well, you will be prompted to allow codesign to use your key:</p>
+
+<p><img src="http://infrared5.github.io/red5pro-ios-app/images/xcode-setup-3.png" alt="codesign asks for access to keychain"></p>
+
+<p>Select <code>Allow</code> or <code>Allow Always</code> and the build tool should finish up shortly with the IPA available at: <strong>dist/Red5Pro.ipa</strong>.</p>
+
+<h3>
+<a id="launch-on-device" class="anchor" href="#launch-on-device" aria-hidden="true"><span class="octicon octicon-link"></span></a>Launch on Device</h3>
+
+<ol>
+<li>Open iTunes</li>
+<li>Plug in an iPhone or iPad and wait for sync to finish</li>
+<li>Drag the generated <strong>Red5Pro.ipa</strong> from the previous step into iTunes</li>
+<li>Navigate to the <code>Apps</code> section within iTunes and locate <strong>Red5Pro</strong>
+</li>
+<li>Click <code>Install</code>
+</li>
+<li>Click <code>Apply</code> or <code>Sync</code>
+</li>
+</ol>
+
+<p><strong>Happy streaming and second screening!</strong></p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
