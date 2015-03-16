@@ -206,30 +206,9 @@
     [self launchCurrentView];
 }
 
-//-(void) viewWillDisappear:(BOOL)animated {
-//    [super viewWillDisappear:animated];
-//    CGRect frameSize = self.view.bounds;
-//    [UIView beginAnimations:@"hideHeaderBar" context:nil];
-//    [UIView setAnimationDuration:0.3f];
-//    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-//    [[self viewHeaderBar] setCenter:CGPointMake(frameSize.size.width * 0.5f, -37.5f)];
-//    [UIView commitAnimations];
-//}
-//
 -(void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self showSettings];
-//    CGRect frameSize = self.view.bounds;
-//    [UIView animateWithDuration:0.2f
-//                          delay:0.0
-//                        options:UIViewAnimationOptionCurveEaseOut
-//                     animations:^{
-//        
-//        [self.view layoutIfNeeded];
-//        [[self viewHeaderBar] setCenter:CGPointMake(frameSize.size.width * 0.5f, 37.5f)];
-//        [self.view layoutIfNeeded];
-//        
-//    } completion:^(BOOL finished) {}];
 }
 
 - (void)didReceiveMemoryWarning

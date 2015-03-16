@@ -63,7 +63,6 @@
     NSString *domain = (NSString*)[defaults objectForKey:@"domain"];
     NSString *app = (NSString*)[defaults objectForKey:@"app"];
     NSString *port = (NSString *)[defaults objectForKey:@"port"];
-    NSString *protocol = (NSString *)[defaults objectForKey:@"protocol"];
     BOOL includeAudio = [defaults boolForKey:@"includeAudio"];
     BOOL includeVideo = [defaults boolForKey:@"includeVideo"];
     
