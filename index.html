@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Red5pro-ios-app by infrared5</title>
+    <title>Red5Pro iOS Application by infrared5</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">i
+    <link rel="stylesheet" href="stylesheets/red5pro.css">
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
@@ -16,8 +17,8 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header">Red5pro-ios-app</h1>
-        <p class="header">iOS-based Red5Pro Application with Streaming and Second Screen integration</p>
+        <h1 class="header">Red5Pro-iOS-app</h1>
+        <p class="header">iOS-based Red5 Pro Application with Streaming and Second Screen integration</p>
 
         <ul>
           <li class="download"><a class="buttons" href="https://github.com/infrared5/red5pro-ios-app/zipball/master">Download ZIP</a></li>
@@ -37,12 +38,7 @@
 <p>This Xcode project shows how to integrate the <a href="http://red5pro.com">Red5 Pro</a> SDKs to enable live streaming and second screen experiences on a mobile device</p>
 </blockquote>
 
-<h2>
-<a id="quickstart" class="anchor" href="#quickstart" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quickstart</h2>
-
-<p><a href="#building-with-xcode">&gt; Using XCode</a></p>
-
-<p><a href="#building-with-command-line">&gt; Using Command Line</a></p>
+<p>To quickly get up and running and build* the IPA:
 
 <pre><code>$ git clone https://github.com/infrared5/red5pro-ios-app.git
 $ cd red5pro-ios-app
@@ -50,17 +46,26 @@ $ xcode-select --install
 $ PROFILE_NAME="YOUR-PROFILE-NAME-HERE" ./dist.sh
 </code></pre>
 
-<p><em>Replace <code>YOUR-PROFILE-NAME-HERE</code> in the following command with the name of your Development Provisioning Profile</em></p>
+<p><em>*Replace <code>YOUR-PROFILE-NAME-HERE</code> in the following command with the name of your Development Provisioning Profile</em></p>
 
 <p>The IPA will be generated and available at: <strong>dist/Red5Pro.ipa</strong>.</p>
 
 <h2>
+<a id="quickstart" class="anchor" href="#quickstart" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quickstart</h2>
+
+<p>Use these handy project setup instructions to start building and using the Red5 Pro iOS Application quickly!</p>
+<ul class="setup-list">
+        <li><p class="setup-link"><a href="#building-with-xcode">Using XCode</a></p></li>
+        <li><p class="setup-link"><a href="#building-with-command-line">Using Command Line</a></p></li>
+</ul>
+
+<h2>
 <a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
-<ul>
-<li><a href="http://red5pro.com">Red5 Pro Server</a></li>
-<li><a href="https://itunes.apple.com/us/app/xcode/id497799835">XCode and XCode Command line tools</a></li>
-<li><a href="http://developer.apple.com">Apple Developer Account</a></li>
+<ul class="requirements-list">
+        <li><p class="requirements-link"><a href="http://red5pro.com">Red5 Pro Server</a></p></li>
+<li><p class="requirements-link"><a href="https://itunes.apple.com/us/app/xcode/id497799835">XCode and XCode Command line tools</a></p></li>
+<li><p class="requirements-link"><a href="http://developer.apple.com">Apple Developer Account</a></p></li>
 </ul>
 
 <p>The Red5 Pro SDKs have a minimum support for <strong>iOS 6</strong>.</p>
