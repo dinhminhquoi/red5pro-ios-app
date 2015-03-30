@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/R5Stream.h</key>
 		<data>
-		f6TOlPxx5MRT303z//dSdptAcfI=
+		pbL/MSZjIslVxhP2LP20QdE3wtg=
 		</data>
 		<key>Headers/R5Streaming.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/global.h</key>
 		<data>
-		aDH172SdXHIcqkq9Z9GJyEXa6KQ=
+		5aiiwPbIoSj5J0cdYOzCEQ3Ti8s=
 		</data>
 		<key>Headers/parse_util.h</key>
 		<data>
@@ -67,42 +67,6 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		tOdhB530EnW1VsyDpGfQPObaxh4=
-		</data>
-		<key>PrivateHeaders/MP4Atom.h</key>
-		<data>
-		HR+vIoGdH6dM0lfcSeT68FFve6E=
-		</data>
-		<key>PrivateHeaders/NALUnit.h</key>
-		<data>
-		ElKr18hJuNyMwYnEo6H0qoG8UtA=
-		</data>
-		<key>PrivateHeaders/R5AACEncoder.h</key>
-		<data>
-		aTWJvrpbOoO2aiOQz/W0uTpxXxc=
-		</data>
-		<key>PrivateHeaders/R5Stream_internal.h</key>
-		<data>
-		1/DdMUdaV1Usi1x5J1dKJLjsUI0=
-		</data>
-		<key>PrivateHeaders/VideoFileOutput.h</key>
-		<data>
-		+QUf2jNifb+/c13L28nrcJOhoSc=
-		</data>
-		<key>PrivateHeaders/connection_internal.h</key>
-		<data>
-		K/Bz3J2Vq3rW90+iSQsMxFIt5Qg=
-		</data>
-		<key>PrivateHeaders/platform.h</key>
-		<data>
-		4Sc1Ju4RQuCNFM72EYMyd4Uysmk=
-		</data>
-		<key>PrivateHeaders/publish_internal.h</key>
-		<data>
-		MezdFg/bpuR0xiUDzZ0o4VOx8PY=
-		</data>
-		<key>PrivateHeaders/renderer.h</key>
-		<data>
-		aRoBz93Zwlzc7kDinr8oh5r7U2U=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -125,7 +89,7 @@
 		</data>
 		<key>Headers/R5Stream.h</key>
 		<data>
-		f6TOlPxx5MRT303z//dSdptAcfI=
+		pbL/MSZjIslVxhP2LP20QdE3wtg=
 		</data>
 		<key>Headers/R5Streaming.h</key>
 		<data>
@@ -149,7 +113,7 @@
 		</data>
 		<key>Headers/global.h</key>
 		<data>
-		aDH172SdXHIcqkq9Z9GJyEXa6KQ=
+		5aiiwPbIoSj5J0cdYOzCEQ3Ti8s=
 		</data>
 		<key>Headers/parse_util.h</key>
 		<data>
@@ -166,42 +130,6 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		tOdhB530EnW1VsyDpGfQPObaxh4=
-		</data>
-		<key>PrivateHeaders/MP4Atom.h</key>
-		<data>
-		HR+vIoGdH6dM0lfcSeT68FFve6E=
-		</data>
-		<key>PrivateHeaders/NALUnit.h</key>
-		<data>
-		ElKr18hJuNyMwYnEo6H0qoG8UtA=
-		</data>
-		<key>PrivateHeaders/R5AACEncoder.h</key>
-		<data>
-		aTWJvrpbOoO2aiOQz/W0uTpxXxc=
-		</data>
-		<key>PrivateHeaders/R5Stream_internal.h</key>
-		<data>
-		1/DdMUdaV1Usi1x5J1dKJLjsUI0=
-		</data>
-		<key>PrivateHeaders/VideoFileOutput.h</key>
-		<data>
-		+QUf2jNifb+/c13L28nrcJOhoSc=
-		</data>
-		<key>PrivateHeaders/connection_internal.h</key>
-		<data>
-		K/Bz3J2Vq3rW90+iSQsMxFIt5Qg=
-		</data>
-		<key>PrivateHeaders/platform.h</key>
-		<data>
-		4Sc1Ju4RQuCNFM72EYMyd4Uysmk=
-		</data>
-		<key>PrivateHeaders/publish_internal.h</key>
-		<data>
-		MezdFg/bpuR0xiUDzZ0o4VOx8PY=
-		</data>
-		<key>PrivateHeaders/renderer.h</key>
-		<data>
-		aRoBz93Zwlzc7kDinr8oh5r7U2U=
 		</data>
 	</dict>
 	<key>rules</key>

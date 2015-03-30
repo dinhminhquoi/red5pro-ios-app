@@ -16,6 +16,11 @@
 
 @protocol R5StreamDelegate;
 
+enum R5RecordType{
+    R5RecordTypeLive,
+    R5RecordTypeRecord,
+    R5RecordTypeAppend
+};
 
 enum R5StreamMode{
     r5_stream_mode_idle,
@@ -37,7 +42,7 @@ enum R5StreamMode{
 
 -(id)initWithConnection:(R5Connection *) conn;
 -(void)play:(NSString *)streamName;
--(void)publish:(NSString *)streamName;
+-(void)publish:(NSString *)streamName type:(enum R5RecordType)type;
 
 -(void) stop;
 
