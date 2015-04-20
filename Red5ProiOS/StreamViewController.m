@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *camera;
 @property SettingsViewController *settingsViewController;
 @property (weak, nonatomic) IBOutlet UIButton *streamPlayButton;
+@property (weak, nonatomic) IBOutlet UIView *streamingView;
 
 @property NSMutableDictionary *viewControllerMap;
 
@@ -134,7 +135,7 @@
 }
 
 -(void)loadStreamView:(NSString *)viewID{
-
+    NSLog(@"Loading");
     if(self.currentStreamView){
         [self.currentStreamView removeFromParentViewController];
         [self.currentStreamView.view removeFromSuperview];
@@ -156,10 +157,11 @@
     myController.view.layer.frame = frameSize;
     myController.view.frame = frameSize;
     
-    NSLog(@"Frame size: %f, %f, %f, %f", self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height);
+   // NSLog(@"Frame size: %f, %f, %f, %f", self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height);
 
     [self.view addSubview:myController.view];
     [self.view sendSubviewToBack:myController.view];
+        NSLog(@"Loaded");
 }
 
 -(void)loadViewFromStoryboard:(NSString *)viewID {

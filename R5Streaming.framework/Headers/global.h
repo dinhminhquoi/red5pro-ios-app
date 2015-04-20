@@ -86,6 +86,7 @@ extern "C" {
 
 int r5_valid_license();
 
+
 enum r5_log_level{
     r5_log_level_debug,
     r5_log_level_info,

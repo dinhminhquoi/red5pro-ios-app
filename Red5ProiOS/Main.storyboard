@@ -397,7 +397,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sPx-1S-4Fe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2118" y="-971"/>
+            <point key="canvasLocation" x="2216" y="-993"/>
         </scene>
         <!--Publish View Controller-->
         <scene sceneID="VEh-tO-hdG">
@@ -415,7 +415,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3f-cl-MZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2481" y="-971"/>
+            <point key="canvasLocation" x="2469" y="-971"/>
         </scene>
         <!--Help View Controller-->
         <scene sceneID="8rJ-gW-GoE">
@@ -797,13 +797,13 @@
                                 <rect key="frame" x="0.0" y="109" width="320" height="387"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YCi-8U-EYt" userLabel="Control Scheme View">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YCi-8U-EYt" userLabel="Control Scheme View">
                                 <rect key="frame" x="0.0" y="109" width="320" height="387"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MfQ-Jf-qWY">
                                         <rect key="frame" x="85" y="190" width="150" height="2"/>
                                     </progressView>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uu3-gT-Q5D" userLabel="R5 Second Screen View" customClass="R5SecondScreenView">
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uu3-gT-Q5D" userLabel="R5 Second Screen View" customClass="R5SecondScreenView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
@@ -823,7 +823,7 @@
                                     <navigationItem title="SecondScreen" id="ji4-dk-Xek"/>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gjX-rp-BVb" userLabel="Hosts View">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gjX-rp-BVb" userLabel="Hosts View">
                                 <rect key="frame" x="0.0" y="109" width="320" height="459"/>
                                 <subviews>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hwz-Ya-eCN">
@@ -959,6 +959,24 @@
             </objects>
             <point key="canvasLocation" x="2229" y="421"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="b6i-HV-YfQ">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="WAj-6L-lyl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1qC-E6-9pN"/>
+                        <viewControllerLayoutGuide type="bottom" id="njL-YP-mP0"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dme-WU-dfK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mod-4i-amj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="box.png" width="34" height="34"/>
@@ -989,6 +1007,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="xd4-U6-Se4"/>
         <segue reference="IEf-a7-nyF"/>
-        <segue reference="use-TN-22a"/>
+        <segue reference="cx3-hF-LdY"/>
     </inferredMetricsTieBreakers>
 </document>

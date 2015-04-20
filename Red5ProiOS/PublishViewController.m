@@ -27,7 +27,8 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self establishPreview];
+    if(stream == nil)
+        [self establishPreview];
 }
 
 -(void)viewDidDisappear:(BOOL)animated {
@@ -40,11 +41,10 @@
 }
 
 -(void)establishPreview {
-    if(stream != nil) {
-        [self killStream];
+    if(stream == nil) {
+         stream = [self setUpNewStream];
     }
-    
-    stream = [self setUpNewStream];
+
     [stream setDelegate:self];
     
     [self attachStream:stream];
@@ -93,6 +93,8 @@
     @try {
         [stream stop];
         [stream setDelegate:nil];
+        stream = nil;
+       
     }
     @catch(NSException *exception) {
         NSLog(@"Could not stop: %@", exception);
@@ -111,7 +113,7 @@
 
 -(void)stop {
     [self killStream];
-    [self establishPreview];
+   // [self establishPreview];
 }
 
 -(void)updatePreview {
