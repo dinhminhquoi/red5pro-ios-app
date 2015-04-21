@@ -135,7 +135,7 @@
 }
 
 -(void)loadStreamView:(NSString *)viewID{
-    NSLog(@"Loading");
+   
     if(self.currentStreamView){
         [self.currentStreamView removeFromParentViewController];
         [self.currentStreamView.view removeFromSuperview];
@@ -161,7 +161,7 @@
 
     [self.view addSubview:myController.view];
     [self.view sendSubviewToBack:myController.view];
-        NSLog(@"Loaded");
+    
 }
 
 -(void)loadViewFromStoryboard:(NSString *)viewID {
