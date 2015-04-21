@@ -104,7 +104,7 @@
     }
     else {
         
-        [publisher stop];
+        [publisher stop: YES];
         if(self.currentMode != r5_example_stream)
             [[self camera] setHidden:NO];
     }
@@ -227,7 +227,7 @@
     if(shown == YES) {
         [self displayCameraButtons:NO];
         [self.launchButton setSelected:NO];
-        [publisher stop];
+        [publisher stop : NO];
         [subscriber stop];
     }
     else {

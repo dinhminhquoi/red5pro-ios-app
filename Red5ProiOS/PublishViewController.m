@@ -105,15 +105,23 @@
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *streamName = (NSString*)[defaults objectForKey:@"stream"];
+
     
     isTogglable = NO;
-    [self showPreview:false];
-    [stream publish:streamName type:R5RecordTypeLive];
+    [stream publish:streamName type:R5RecordTypeRecord];
 }
 
--(void)stop {
+-(void)close{
+    
+}
+
+-(void)stop:(BOOL)reset {
+    
     [self killStream];
-   // [self establishPreview];
+    
+    if(reset == YES)
+        [self establishPreview];
+    
 }
 
 -(void)updatePreview {

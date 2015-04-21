@@ -11,6 +11,6 @@
 
 @interface PublishViewController : R5VideoViewController<R5StreamDelegate>
 -(void)start;
--(void)stop;
+-(void)stop : (BOOL) reset;
 -(void)toggleCamera;
 @end
