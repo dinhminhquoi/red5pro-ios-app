@@ -22,8 +22,8 @@ extern "C" {
     
 #define R5PRO_MAJOR_VERSION         0
 #define R5PRO_MINOR_VERSION         8
-#define R5PRO_REVISION              20
-#define R5PRO_VERSION               "0.8.20"
+#define R5PRO_REVISION              22
+#define R5PRO_VERSION               "0.8.22"
 #define R5PRO_VERSION_ISRELEASE     0
 #define R5PRO_VERSION_CHECK(maj, min) ((maj==MYLIB_MAJOR_VERSION) && (min<=MYLIB_MINOR_VERSION))
     
@@ -64,7 +64,7 @@ extern "C" {
 #define LOGD(M, ...) if(r5_get_log_level() <= (int)r5_log_level_debug) fprintf(stderr, "[R5 DEBUG]" M "\n", ##__VA_ARGS__)
 #define LOGI(M, ...) if(r5_get_log_level() <= (int)r5_log_level_info) fprintf(stderr,  "[R5 INFO] " M "\n", ##__VA_ARGS__)
 #define LOGW(M, ...) if(r5_get_log_level() <= (int)r5_log_level_warn) fprintf(stderr,  "[R5 WARNING] " M "\n", ##__VA_ARGS__);
-#define LOGE(M, ...) if(r5_get_log_level() <= (int)r5_log_level_error) fprintf(stderr, "[R5 ERROR] (%s:%d:)" M "\n", __FILE__, __LINE__, ##__VA_ARGS__);
+#define LOGE(M, ...) if(r5_get_log_level() <= (int)r5_log_level_error) fprintf(stderr, "[R5 ERROR] " M "\n", ##__VA_ARGS__);
     
 #else
 #include <android/log.h>
