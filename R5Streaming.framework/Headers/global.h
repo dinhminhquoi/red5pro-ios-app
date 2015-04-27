@@ -22,8 +22,8 @@ extern "C" {
     
 #define R5PRO_MAJOR_VERSION         0
 #define R5PRO_MINOR_VERSION         8
-#define R5PRO_REVISION              22
-#define R5PRO_VERSION               "0.8.22"
+#define R5PRO_REVISION              23
+#define R5PRO_VERSION               "0.8.23"
 #define R5PRO_VERSION_ISRELEASE     0
 #define R5PRO_VERSION_CHECK(maj, min) ((maj==MYLIB_MAJOR_VERSION) && (min<=MYLIB_MINOR_VERSION))
     
@@ -113,10 +113,8 @@ enum r5_stream_mode{
 };
 
 typedef enum r5_stream_mode r5_stream_mode_t;
+ 
     
-
-
-
 const char * r5_string_for_status(int status);
 
 void r5_set_log_level(int level);

@@ -12,11 +12,38 @@
 
 
 
+/**
+ *  @brief The main connection class for R5Pro.  This establishes the connection to the server.  Used by R5Stream as the communication layer.
+ */
 @interface R5Connection : NSObject
-@property R5Configuration *config;
 
--(id)initWithConfig:(R5Configuration*) config;
+/**
+ *  The configuration for this connection
+ */
+@property (readonly) R5Configuration *config;
+
+/**
+ *  Initialize the connection with the configuration
+ *
+ *  @param config The configuration of the connection
+ *
+ *  @return a new connection
+ */
+-(id)initWithConfig:(R5Configuration*) configuration;
+
+/**
+ *  Make a connection call RPC to the server
+ *
+ *  @param method Method name to call
+ *  @param param  Parameter to send for this method
+ */
 -(void)call:(NSString*)method withParam:(NSString*)param;
+
+/**
+ *  Get the connection context associated with this context
+ *
+ *  @return A client connection context.
+ */
 -(client_ctx*)context ;
 
 

@@ -8,16 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *  @brief Configuration object for the R5Stream.
+ */
 @interface R5Configuration : NSObject
 
 @property int protocol;
-@property NSString *host;
-@property NSString *contextName;
-@property NSString *streamName;
-@property int port;
+@property NSString *host;           //!< Host (IP) to connect too
+@property NSString *contextName;    //!< Application/Context name
+@property NSString *streamName;     //!< Name of the stream to publish/subscribe too
+@property int port;                 //!< Port to connect over
+
+//! @cond
 @property NSMutableArray *setup;
 @property NSString *sdp_body;
-//in seconds
-@property float buffer_time;
+//! @endcond
+
+@property float buffer_time;        //!< Desired buffer time for streaming
 
 @end
