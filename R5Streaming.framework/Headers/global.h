@@ -22,8 +22,8 @@ extern "C" {
     
 #define R5PRO_MAJOR_VERSION         0
 #define R5PRO_MINOR_VERSION         8
-#define R5PRO_REVISION              26
-#define R5PRO_VERSION               "0.8.26"
+#define R5PRO_REVISION              28
+#define R5PRO_VERSION               "0.8.28"
 #define R5PRO_VERSION_ISRELEASE     0
 #define R5PRO_VERSION_CHECK(maj, min) ((maj==MYLIB_MAJOR_VERSION) && (min<=MYLIB_MINOR_VERSION))
     
@@ -31,7 +31,6 @@ extern "C" {
 #define SEC_TO_NANO 1e9
 #define SEC_TO_MS 1e3
 
-    
 
     typedef struct rpc_call rpc_call;
     typedef struct client_ctx client_ctx;
