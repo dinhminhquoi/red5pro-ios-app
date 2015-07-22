@@ -27,6 +27,7 @@
  */
 -(id)initWithDevice:(AVCaptureDevice*)device andBitRate:(int)bitRate;
 
+
 @end
 
 
@@ -38,7 +39,8 @@
 @property AVCaptureDevice *device;  //!< Input device
 @property int sampleRate;           //!< sample rate to capture
 @property int channels;             //!< number of channels to capture
-@property int bitrate;              //!< bitrate in seconds to stream audio
+@property int bitrate;              //!< bitrate in kbps
+
 
 /**
  *  A microphone input for R5Stream
@@ -48,5 +50,6 @@
  *  @return new R5Microphone
  */
 -(id)initWithDevice:(AVCaptureDevice*)device;
+
 
 @end

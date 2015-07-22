@@ -25,7 +25,14 @@ typedef int (^source_param_handler_t)(NSData* params);
 @property int height;           //!< Desired height of the video source (subject to hardware)
 @property int bitrate;          //!< Bitrate in kbps of the video stream
 @property int orientation;      //!< Orientation of presentation. @note  Video is rotated by the streaming software and NOT in the encoding.  This is a meta flag only.
+
+@property int fps;                  //!< Frame rate to record at
 @property AVEncoder *encoder;//!< Hardware encoder set by the VideoSource.  Pass frames to the encoder to continue to socket
+
+@property BOOL adaptiveBitRate;
+
+@property BOOL pauseEncoding;
+
 @property AVCaptureVideoDataOutput *output; //!< Output path for the encoded data
 
 
@@ -50,11 +57,12 @@ typedef int (^source_param_handler_t)(NSData* params);
 - (void) encodeWithBlock:(source_handler_t) block onParams: (source_param_handler_t) paramsHandler;
 
 /**
- *  A dictionary formatted with the following keys (values all NSNumber):
- *  @li R5VideoWidthkey
- *  @li R5VideoHeightKey
- *  @li R5VideoBitRateKey
- *  @li R5VideoOrientationKey
+ *  A dictionary formatted with the following keys:
+ *  @li R5VideoWidthkey - NSNumber (int)
+ *  @li R5VideoHeightKey - NSNumber (int)
+ *  @li R5VideoBitRateKey - NSNumber (int)
+ *  @li R5VideoOrientationKey - NSNumber (float)
+ *  @li R5VideoAdaptiveBitRateKey - NSString ( "YES" | "NO" )
  *
  *  @return a properly formatted dictionary with all keys set
  */
@@ -73,5 +81,7 @@ typedef int (^source_param_handler_t)(NSData* params);
  *  @param session Session to stop
  */
 -(void)releaseSession:(AVCaptureSession*)session;
+
+-(void)updateEncoder;
 
 @end

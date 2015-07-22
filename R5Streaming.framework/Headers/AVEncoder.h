@@ -24,6 +24,9 @@ typedef int (^param_handler_t)(NSData* params);
 +(AVEncoder*)encoderWithParams:(NSDictionary*)params;
 
 - (void) encodeWithBlock:(encoder_handler_t) block onParams: (param_handler_t) paramsHandler;
+
+-(void) updateParams:(NSDictionary *)params;
+
 - (void) encodeFrame:(CMSampleBufferRef) sampleBuffer ofType:(int)media_type;
 - (NSData*) getConfigData;
 - (void) shutdown;
